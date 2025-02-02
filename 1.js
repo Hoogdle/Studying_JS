@@ -52,4 +52,38 @@ b = a;
 // allow us to see thing in the console.
 console.log(a) // => 7
 
-// #Initializing Variables w/ assignments Operator
+// #example of operation
+var a = 5;
+var b = 10;
+var c= "I am a";
+
+a = a + 1; // 6
+b = b + 5; // 15
+c = c + "String!"; // "I am a String!"
+
+// #Case Sensitivity in Variables.
+// JS regard Capital and small letter diffrenetly.
+// in pratice, 'Camle Case' usually used.
+
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000
+
+// #Adding | Subtraction | Multiplecation | Dividing numbers
+// very straigtforward
+
+var sum = 10 + 10;
+console.log(sum) // 20
+
+var difference = 45- 33;
+console.log(difference) // 12
+
+var product = 8*10;
+console.log(product) // 80
+
+var quotient = 66 / 33;
+console.log(quotient) // 2
