@@ -1,52 +1,62 @@
-// variable = A container that stores a value.
-//              Behaves as if it were the value it contains.
+// type conversion = change the datatype of a value to another
+//                   (strings, numbers, booleans)
 
-// 1. declaration       let x;
-// 2. assignment        x = 100;
+let age = window.prompt("How old are you?");
 
-// let x;
-// x = 123;
+// age += 1
+// console.log(age) // 251 (because it's deal with stirngs) (expect 26)
 
-// let y = 123;
-
-// console.log(x);
-
-let age = 25;
-let price = 10.99;
-let gpa = 4.5;
-let userName = "Kim";
-let favoriteFood = "sushi";
-let email = "Bro@Gamil.com";
-
-// ${} only possible in 'back-tik' (``)
-console.log(`You are ${age} years old`);
-console.log(`The price is $${price}`);
-console.log(`Your gpa is : ${gpa}`);
-console.log(`You like ${favoriteFood}`);
-console.log(`Your email is ${email}`);
-
-// check type
-console.log(typeof userName) // string
-console.log(typeof age) // number
-console.log(typeof gpa) // number
-
-// boolean
-let online = true;
-let forSale = true;
-let isStudent = true;
-
-console.log(online); // true
-console.log(`Bro is online : ${online}`);
-console.log(`Is this car for slae : ${forSale}`);
-console.log(`Enrolled : ${isStudent}`);
+age = Number(age)
+age += 1 // to Number
+console.log(age) // 26
 
 
-// Excersize
+let x = "pizza";
+let y = "pizza";
+let z = "pizza";
 
-let fullName = "Kim Taeyeong";
-let ages = 25;
-let student = true;
+x = Number(x);
+y = String(y);
+z = Boolean(z);
 
-document.getElementById("p1").textContent = `Your name is ${fullName}`;
-document.getElementById("p2").textContent = `Your age is ${ages}`;
-document.getElementById("p3").textContent = `Enrolled : ${student}`;
+console.log(x, typeof x) // NaN 'number'
+console.log(y, typeof y) // pizza string
+console.log(z, typeof z) // true 'boolean'
+
+let x2 = "0";
+let y2 = "0";
+let z2 = "0";
+
+x2 = Number(x2);
+y2 = String(y2);
+z2 = Boolean(z2);
+
+console.log(x2, typeof x2) // 0 'number'
+console.log(y2, typeof y2) // 0 string
+console.log(z2, typeof z2) // true 'boolean'
+
+let x3 = "";
+let y3 = "";
+let z3 = "";
+
+x3 = Number(x3);
+y3 = String(y3);
+z3 = Boolean(z3);
+
+console.log(x3, typeof x3) // 0 'number'
+console.log(y3, typeof y3) //  string
+console.log(z3, typeof z3) // false 'boolean'
+// if user skip the input, it will be empty string which refers to false
+
+
+let x4;
+let y4;
+let z4;
+
+x4 = Number(x4);
+y4 = String(y4);
+z4 = Boolean(z4);
+
+console.log(x4, typeof x4) // NaN 'number'
+console.log(y4, typeof y4) // undefiend string
+console.log(z4, typeof z4) // false 'boolean'
