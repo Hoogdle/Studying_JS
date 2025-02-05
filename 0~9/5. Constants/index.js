@@ -1,52 +1,27 @@
-// variable = A container that stores a value.
-//              Behaves as if it were the value it contains.
+// const = a variable that can't be changed
 
-// 1. declaration       let x;
-// 2. assignment        x = 100;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
-// let x;
-// x = 123;
+//pi = 420.69; // if someone changed pi? => have not good situations
+// => so that we need const to restrict to change value
+//PI = 420.69 // have error
 
-// let y = 123;
+// radius = window.prompt('Enter the radius of a Circle');
+// radius = Number(radius);
+// circumference = 2 * pi * radius
 
-// console.log(x);
+// console.log(circumference)
 
-let age = 25;
-let price = 10.99;
-let gpa = 4.5;
-let userName = "Kim";
-let favoriteFood = "sushi";
-let email = "Bro@Gamil.com";
+const PI = 3.14159;
+let radius;
+let circumference;
 
-// ${} only possible in 'back-tik' (``)
-console.log(`You are ${age} years old`);
-console.log(`The price is $${price}`);
-console.log(`Your gpa is : ${gpa}`);
-console.log(`You like ${favoriteFood}`);
-console.log(`Your email is ${email}`);
-
-// check type
-console.log(typeof userName) // string
-console.log(typeof age) // number
-console.log(typeof gpa) // number
-
-// boolean
-let online = true;
-let forSale = true;
-let isStudent = true;
-
-console.log(online); // true
-console.log(`Bro is online : ${online}`);
-console.log(`Is this car for slae : ${forSale}`);
-console.log(`Enrolled : ${isStudent}`);
-
-
-// Excersize
-
-let fullName = "Kim Taeyeong";
-let ages = 25;
-let student = true;
-
-document.getElementById("p1").textContent = `Your name is ${fullName}`;
-document.getElementById("p2").textContent = `Your age is ${ages}`;
-document.getElementById("p3").textContent = `Enrolled : ${student}`;
+document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    
+    document.getElementById("myH3").textContent = circumference + "cm";
+}
