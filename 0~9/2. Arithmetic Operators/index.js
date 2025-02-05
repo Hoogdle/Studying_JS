@@ -23,5 +23,22 @@ students /= 2;
 students **= 2;
 students %= 2;
 
-// 30:22
-console.log(students);
+
+// increment
+students++;
+students--;
+
+/*
+    operator precedence
+    1. parenthesis()
+    2. expoenets
+    3. multiplication & division & modulo
+    4. addition & substraction
+*/
+
+let result = 1 + 2 * 3 + 4 ** 2;
+
+console.log(result); // 23
+
+
+
